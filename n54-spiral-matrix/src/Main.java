@@ -11,10 +11,7 @@ public class Main {
 
     public static List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> list = new LinkedList<>();
-        int x = 0;
-        int y = 0;
         double turns = Math.min(matrix.length, matrix[0].length) * 1.0 / 2;
-        boolean square = matrix.length == matrix[0].length;
         boolean vertical = matrix.length > matrix[0].length;
         int turn = 0;
 
