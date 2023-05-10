@@ -38,12 +38,12 @@ public class Main {
                     list.add(matrix[i][turn]);
                 }
             } else {
-                if (vertical) {
+                // Add whatever is left of the matrix
+                if (vertical) { // if the matrix is higher than it is wide
                     for (int i = turn; i < matrix.length - turn; i++) {
                         list.add(matrix[i][turn]);
                     }
-
-                } else {
+                } else { // if the matrix is wider than it is large, or if it is a square.
                     for (int i = turn; i < matrix[turn].length - turn; i++) {
                         list.add(matrix[turn][i]);
                     }
